@@ -24,5 +24,4 @@ dist-ssr
 *.sw?
 
 # Media
-public/*.mp4
 .env
