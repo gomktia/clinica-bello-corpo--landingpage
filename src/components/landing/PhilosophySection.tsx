@@ -3,7 +3,7 @@ import { AlertCircle, CheckCircle2, TrendingUp, Users } from "lucide-react";
 
 const PhilosophySection = () => {
     return (
-        <section id="metodo" className="py-20 bg-white relative overflow-hidden">
+        <section id="metodo" className="py-16 md:py-24 bg-white relative overflow-hidden">
             <div className="container mx-auto px-6 lg:px-12">
                 <div className="text-center max-w-4xl mx-auto mb-20">
                     <motion.div
@@ -19,7 +19,7 @@ const PhilosophySection = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="font-display text-4xl md:text-6xl text-secondary font-black leading-tight mb-8"
+                        className="font-display text-3xl md:text-5xl lg:text-6xl text-secondary font-black leading-tight mb-8"
                     >
                         O MERCADO <span className="text-red-600">MENTE</span> PRA VOCÊ <br className="hidden md:block" /> TODOS OS DIAS.
                     </motion.h2>
@@ -85,7 +85,7 @@ const PhilosophySection = () => {
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        className="bg-muted/30 p-10 rounded-[2.5rem] border border-secondary/5 relative overflow-hidden"
+                        className="bg-muted/30 p-6 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border border-secondary/5 relative overflow-hidden"
                     >
                         <div className="absolute -top-4 -left-4 w-24 h-24 bg-red-500/5 blur-2xl rounded-full" />
                         <div className="flex items-center gap-4 mb-10">
@@ -118,7 +118,7 @@ const PhilosophySection = () => {
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        className="bg-dark-premium p-10 rounded-[2.5rem] shadow-extra-elegant relative overflow-hidden ring-1 ring-primary/20"
+                        className="bg-dark-premium p-6 md:p-10 rounded-[2rem] md:rounded-[2.5rem] shadow-extra-elegant relative overflow-hidden ring-1 ring-primary/20"
                     >
                         <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-3xl rounded-full" />
                         <div className="flex items-center gap-4 mb-10">
