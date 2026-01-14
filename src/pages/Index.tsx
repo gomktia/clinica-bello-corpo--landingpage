@@ -2,6 +2,7 @@ import Header from "@/components/landing/Header";
 import HeroSection from "@/components/landing/HeroSection";
 import AuthoritySection from "@/components/landing/AuthoritySection";
 import PhilosophySection from "@/components/landing/PhilosophySection";
+import CourseCover from "@/components/landing/CourseCover";
 import CourseModules from "@/components/landing/CourseModules";
 import BenefitsSection from "@/components/landing/BenefitsSection";
 import TestimonialsSection from "@/components/landing/TestimonialsSection";
@@ -21,6 +22,7 @@ const Index = () => {
       <Header onCtaClick={scrollToForm} />
       <HeroSection onCtaClick={scrollToForm} />
       <PhilosophySection />
+      <CourseCover />
       <CourseModules />
       <AuthoritySection />
       <BenefitsSection />

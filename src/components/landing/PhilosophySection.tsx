@@ -52,7 +52,7 @@ const PhilosophySection = () => {
                 >
                     <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20 rounded-[2.5rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                     <div className="relative bg-white p-2 rounded-[2.5rem] border border-primary/20 shadow-extra-elegant overflow-hidden">
-                        <div className="aspect-[16/11] w-full rounded-[2rem] overflow-hidden bg-secondary relative">
+                        <div className="aspect-video w-full rounded-[2rem] overflow-hidden bg-secondary relative">
                             <video
                                 className="w-full h-full object-cover object-top"
                                 autoPlay
@@ -70,12 +70,12 @@ const PhilosophySection = () => {
                         </div>
 
                         {/* Video Footer Label */}
-                        <div className="px-8 py-4 flex items-center justify-between border-t border-secondary/5 mt-2 bg-muted/30 rounded-b-[1.8rem]">
+                        <div className="px-4 md:px-8 py-3 md:py-4 flex items-center justify-between border-t border-secondary/5 mt-2 bg-muted/30 rounded-b-[1.8rem]">
                             <div className="flex items-center gap-3">
                                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                                <p className="text-secondary/60 text-[10px] uppercase font-bold tracking-widest">A Realidade da Clínica Bello Corpo</p>
+                                <p className="text-secondary/60 text-[9px] md:text-[10px] uppercase font-bold tracking-widest leading-none">A Realidade da Clínica Bello Corpo</p>
                             </div>
-                            <p className="text-primary font-bold text-[10px] uppercase tracking-widest italic">Ciência & Técnica</p>
+                            <p className="text-primary font-bold text-[9px] md:text-[10px] uppercase tracking-widest italic leading-none">Ciência & Técnica</p>
                         </div>
                     </div>
                 </motion.div>

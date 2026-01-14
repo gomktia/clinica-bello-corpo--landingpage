@@ -76,7 +76,7 @@ const CourseModules = () => {
                     {/* The Timeline Line (Mobile) - UPDATED TO DARK COLOR */}
                     <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-secondary/10 lg:hidden" />
 
-                    <div className="space-y-8 lg:space-y-0">
+                    <div className="space-y-6 lg:space-y-0">
                         {aulas.map((aula, index) => (
                             <div key={index} className={`flex flex-col lg:flex-row items-center gap-6 lg:gap-0 ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
                                 {/* Content Side */}
@@ -85,23 +85,23 @@ const CourseModules = () => {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.5, delay: 0.05 }}
-                                    className="w-full lg:w-1/2 pl-12 pr-4 lg:px-12 relative"
+                                    className="w-full lg:w-1/2 pl-10 pr-2 lg:px-12 relative"
                                 >
                                     {/* Mobile Connector Dot */}
-                                    <div className="absolute left-[-1.75rem] top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-primary border-4 border-white rounded-full lg:hidden z-20 shadow-sm" />
+                                    <div className="absolute left-[-1.625rem] top-1/2 -translate-y-1/2 w-3 h-3 bg-primary border-2 border-white rounded-full lg:hidden z-20 shadow-sm" />
 
-                                    <div className={`group bg-white p-6 md:p-8 rounded-[2rem] shadow-soft hover:shadow-xl hover:border-primary/30 transition-all duration-500 border border-secondary/5 relative ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'}`}>
+                                    <div className={`group bg-white p-5 md:p-8 rounded-[1.5rem] md:rounded-[2rem] shadow-soft hover:shadow-xl hover:border-primary/30 transition-all duration-500 border border-secondary/5 relative ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'}`}>
                                         {/* Desktop Connector Dot */}
                                         <div className={`absolute top-1/2 -translate-y-1/2 w-3 h-3 bg-secondary/20 rounded-full hidden lg:block z-20 ${index % 2 === 0 ? '-right-[1.625rem]' : '-left-[1.625rem]'}`} />
 
-                                        <div className={`w-11 h-11 rounded-xl bg-muted/50 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:shadow-gold-glow transition-all duration-500 ${index % 2 === 0 ? 'lg:ml-auto' : ''}`}>
-                                            <aula.icon className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
+                                        <div className={`w-10 h-10 md:w-11 md:h-11 rounded-xl bg-muted/50 flex items-center justify-center mb-3 md:mb-4 group-hover:bg-primary group-hover:shadow-gold-glow transition-all duration-500 ${index % 2 === 0 ? 'lg:ml-auto' : ''}`}>
+                                            <aula.icon className="w-5 h-5 md:w-6 md:h-6 text-primary group-hover:text-white transition-colors" />
                                         </div>
 
-                                        <span className="text-primary font-black text-[9px] uppercase tracking-[0.2em] block mb-1">
+                                        <span className="text-primary font-black text-[8px] md:text-[9px] uppercase tracking-[0.2em] block mb-1">
                                             Aula 0{index + 1}
                                         </span>
-                                        <h3 className="font-display text-xl text-secondary font-black mb-2 group-hover:text-primary transition-colors">
+                                        <h3 className="font-display text-lg md:text-xl text-secondary font-black mb-1 md:mb-2 group-hover:text-primary transition-colors">
                                             {aula.title}
                                         </h3>
                                         <p className="text-secondary/60 text-xs md:text-sm leading-relaxed group-hover:text-secondary/80 font-medium transition-colors">

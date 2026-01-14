@@ -24,7 +24,7 @@ const AuthoritySection = () => {
               </div>
 
               {/* Experience Label - Adjusted for Mobile Safety */}
-              <div className="absolute -top-2 right-0 md:top-10 md:-right-10 glass px-4 py-3 md:px-6 md:py-4 rounded-2xl md:rounded-3xl z-30 shadow-elegant border border-primary/20">
+              <div className="absolute -top-4 right-0 md:top-10 md:-right-10 glass px-4 py-3 md:px-6 md:py-4 rounded-2xl md:rounded-3xl z-30 shadow-elegant border border-primary/20">
                 <p className="text-primary font-black text-xl md:text-3xl leading-none">+ de 15 anos</p>
                 <p className="text-secondary/60 text-[8px] md:text-[9px] uppercase font-bold tracking-[0.2em] mt-1 text-center md:text-left">Experiência Clínica</p>
               </div>
@@ -45,7 +45,7 @@ const AuthoritySection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             className="flex flex-col gap-5 md:gap-6"
           >
-            <span className="text-primary font-black text-[10px] md:text-xs uppercase tracking-[0.4em]">Propósito Bello Corpo</span>
+            <span className="text-primary font-black text-[10px] md:text-xs uppercase tracking-[0.2em] md:tracking-[0.4em]">Propósito Bello Corpo</span>
             <h2 className="font-display text-3xl md:text-5xl text-secondary font-black leading-tight">
               A Diferença entre <span className="text-gradient-gold">Técnica</span> e <span className="italic">Maestria.</span>
             </h2>

@@ -41,7 +41,7 @@ const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="font-display text-3xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6 text-center lg:text-left"
+            className="font-display text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6 text-center lg:text-left balance"
           >
             Faturamento de Luxo na <br className="hidden sm:block" />
             <span className="text-gradient-gold text-glow-gold">Estética Avançada</span>
