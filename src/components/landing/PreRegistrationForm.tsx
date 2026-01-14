@@ -7,6 +7,13 @@ import CountdownTimer from "./CountdownTimer";
 import { toast } from "sonner";
 import confetti from "canvas-confetti";
 import { supabase } from "@/integrations/supabase/client";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 
 interface PreRegistrationFormProps {
   id?: string;
@@ -109,138 +116,137 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
             </div>
           </motion.div>
 
-          {/* Form Card */}
+          {/* Form Card (Now always shown, opening dialog on success) */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="relative w-full"
           >
-            <AnimatePresence mode="wait">
-              {!isSuccess ? (
-                <motion.div
-                  key="form"
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.95 }}
-                  className="bg-white rounded-[2.5rem] md:rounded-[3.5rem] p-7 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative overflow-hidden"
+            <div
+              className="bg-white rounded-[2.5rem] md:rounded-[3.5rem] p-7 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative overflow-hidden"
+            >
+              <div className="absolute -top-3 -right-2 md:-top-4 md:-right-4 bg-primary text-dark-premium px-4 py-1.5 md:px-6 md:py-2 rounded-xl md:rounded-2xl font-black text-xs md:text-sm shadow-gold-glow rotate-2 md:rotate-6 z-20">
+                LISTA VIP
+              </div>
+
+              <div className="mb-8 text-center md:text-left">
+                <h3 className="text-2xl md:text-3xl font-black text-dark-premium mb-2">Faça sua Inscrição</h3>
+                <p className="text-secondary/60 font-medium">Preencha os dados para garantir sua vaga.</p>
+              </div>
+
+              <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+                <div className="space-y-2">
+                  <Input
+                    placeholder="Seu Nome Completo"
+                    required
+                    value={formData.name}
+                    onChange={e => setFormData({ ...formData, name: e.target.value })}
+                    className="h-14 md:h-16 rounded-2xl border-secondary/10 px-6 font-medium focus:ring-primary/20 text-base"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Input
+                    type="email"
+                    placeholder="Seu Melhor E-mail"
+                    required
+                    value={formData.email}
+                    onChange={e => setFormData({ ...formData, email: e.target.value })}
+                    className="h-14 md:h-16 rounded-2xl border-secondary/10 px-6 font-medium focus:ring-primary/20 text-base"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Input
+                    type="tel"
+                    placeholder="WhatsApp (com DDD)"
+                    required
+                    value={formData.whatsapp}
+                    onChange={e => setFormData({ ...formData, whatsapp: e.target.value })}
+                    className="h-14 md:h-16 rounded-2xl border-secondary/10 px-6 font-medium focus:ring-primary/20 text-base"
+                  />
+                </div>
+
+                <Button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full btn-gold-glow h-16 md:h-20 text-lg md:text-xl font-black tracking-widest mt-4 group rounded-2xl md:rounded-3xl"
                 >
-                  <div className="absolute -top-3 -right-2 md:-top-4 md:-right-4 bg-primary text-dark-premium px-4 py-1.5 md:px-6 md:py-2 rounded-xl md:rounded-2xl font-black text-xs md:text-sm shadow-gold-glow rotate-2 md:rotate-6 z-20">
-                    LISTA VIP
-                  </div>
+                  {isSubmitting ? "PROCESSANDO..." : "GARANTIR MINHA VAGA AGORA"}
+                  {!isSubmitting && <ArrowRight className="ml-2 w-6 h-6 group-hover:translate-x-1 transition-transform" />}
+                </Button>
 
-                  <div className="mb-8 text-center md:text-left">
-                    <h3 className="text-2xl md:text-3xl font-black text-dark-premium mb-2">Faça sua Inscrição</h3>
-                    <p className="text-secondary/60 font-medium">Preencha os dados para garantir sua vaga.</p>
-                  </div>
-
-                  <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
-                    <div className="space-y-2">
-                      <Input
-                        placeholder="Seu Nome Completo"
-                        required
-                        value={formData.name}
-                        onChange={e => setFormData({ ...formData, name: e.target.value })}
-                        className="h-14 md:h-16 rounded-2xl border-secondary/10 px-6 font-medium focus:ring-primary/20 text-base"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Input
-                        type="email"
-                        placeholder="Seu Melhor E-mail"
-                        required
-                        value={formData.email}
-                        onChange={e => setFormData({ ...formData, email: e.target.value })}
-                        className="h-14 md:h-16 rounded-2xl border-secondary/10 px-6 font-medium focus:ring-primary/20 text-base"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Input
-                        type="tel"
-                        placeholder="WhatsApp (com DDD)"
-                        required
-                        value={formData.whatsapp}
-                        onChange={e => setFormData({ ...formData, whatsapp: e.target.value })}
-                        className="h-14 md:h-16 rounded-2xl border-secondary/10 px-6 font-medium focus:ring-primary/20 text-base"
-                      />
-                    </div>
-
-                    <Button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="w-full btn-gold-glow h-16 md:h-20 text-lg md:text-xl font-black tracking-widest mt-4 group rounded-2xl md:rounded-3xl"
-                    >
-                      {isSubmitting ? "PROCESSANDO..." : "GARANTIR MINHA VAGA AGORA"}
-                      {!isSubmitting && <ArrowRight className="ml-2 w-6 h-6 group-hover:translate-x-1 transition-transform" />}
-                    </Button>
-
-                    <div className="flex items-center justify-center gap-3 mt-6 md:mt-8 opacity-60">
-                      <ShieldCheck className="w-4 h-4 text-green-600" />
-                      <span className="text-[10px] md:text-xs text-secondary/60 font-black uppercase tracking-widest">Ambiente 100% Seguro</span>
-                    </div>
-                  </form>
-                </motion.div>
-              ) : (
-                <motion.div
-                  key="success"
-                  initial={{ opacity: 0, scale: 0.9, y: 20 }}
-                  animate={{ opacity: 1, scale: 1, y: 0 }}
-                  className="bg-dark-premium border-2 border-primary/30 rounded-[2.5rem] md:rounded-[3.5rem] p-7 md:p-12 shadow-[0_0_50px_rgba(212,175,55,0.2)] text-center relative overflow-hidden"
-                >
-                  {/* Subtle Glow Background */}
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
-
-                  <div className="w-16 h-16 md:w-20 md:h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 md:mb-8">
-                    <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-primary animate-pulse" />
-                  </div>
-
-                  <h3 className="text-3xl md:text-4xl font-black text-white mb-4 italic">PARABÉNS!</h3>
-                  <p className="text-white/60 text-base md:text-lg mb-8 md:mb-10 leading-relaxed">
-                    Sua vaga na lista VIP foi reservada com sucesso. <br className="hidden md:block" />
-                    Escolha por onde deseja continuar:
-                  </p>
-
-                  <div className="flex flex-col gap-4 mb-8">
-                    <Button
-                      onClick={() => window.open(whatsappUrl, "_blank")}
-                      className="w-full h-16 md:h-20 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-2xl md:rounded-3xl flex items-center justify-center gap-3 text-lg md:text-xl font-black transition-all hover:scale-[1.02] shadow-[0_10px_30px_rgba(37,211,102,0.3)]"
-                    >
-                      <MessageCircle className="w-6 h-6 fill-current" />
-                      ENTRAR NO GRUPO VIP
-                    </Button>
-
-                    <Button
-                      onClick={() => window.open(checkoutUrl, "_blank")}
-                      className="w-full h-16 md:h-20 btn-gold-glow rounded-2xl md:rounded-3xl flex items-center justify-center gap-3 text-lg md:text-xl font-black transition-all hover:scale-[1.02]"
-                    >
-                      <CreditCard className="w-6 h-6" />
-                      COMPRAR AGORA (LOTE 01)
-                    </Button>
-                  </div>
-
-                  {/* Choice Status Bar */}
-                  <div className="pt-6 border-t border-white/5">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-[10px] text-white/40 uppercase font-black tracking-widest">Status Geral</span>
-                      <span className="text-primary font-bold text-xs italic">Quase Esgotado</span>
-                    </div>
-                    <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        animate={{ width: "87%" }}
-                        className="h-full bg-primary"
-                      />
-                    </div>
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
+                <div className="flex items-center justify-center gap-3 mt-6 md:mt-8 opacity-60">
+                  <ShieldCheck className="w-4 h-4 text-green-600" />
+                  <span className="text-[10px] md:text-xs text-secondary/60 font-black uppercase tracking-widest">Ambiente 100% Seguro</span>
+                </div>
+              </form>
+            </div>
           </motion.div>
         </div >
       </div >
+
+      {/* Success Modal (Dialog) */}
+      <Dialog open={isSuccess} onOpenChange={setIsSuccess}>
+        <DialogContent className="max-w-[400px] md:max-w-[500px] bg-dark-premium border-primary/30 p-0 overflow-hidden rounded-[2.5rem] md:rounded-[3rem]">
+          <div className="p-8 md:p-12 text-center relative">
+            {/* Subtle Glow Background */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
+
+            <motion.div
+              initial={{ scale: 0.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              className="w-16 h-16 md:w-20 md:h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 md:mb-8"
+            >
+              <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-primary animate-pulse" />
+            </motion.div>
+
+            <DialogHeader className="p-0 mb-6">
+              <DialogTitle className="text-3xl md:text-4xl font-black text-white italic text-center mb-2">
+                INSCRITO COM SUCESSO!
+              </DialogTitle>
+              <DialogDescription className="text-white/60 text-base md:text-lg leading-relaxed text-center">
+                Sua vaga na lista VIP foi reservada. <br className="hidden md:block" />
+                Como você deseja prosseguir agora?
+              </DialogDescription>
+            </DialogHeader>
+
+            <div className="flex flex-col gap-4 mb-8">
+              <Button
+                onClick={() => window.open(whatsappUrl, "_blank")}
+                className="w-full h-16 md:h-18 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-2xl md:rounded-3xl flex items-center justify-center gap-3 text-lg font-black transition-all hover:scale-[1.02] shadow-[0_10px_30px_rgba(37,211,102,0.3)] border-none"
+              >
+                <MessageCircle className="w-6 h-6 fill-current" />
+                ENTRAR NO GRUPO VIP
+              </Button>
+
+              <Button
+                onClick={() => window.open(checkoutUrl, "_blank")}
+                className="w-full h-16 md:h-18 btn-gold-glow rounded-2xl md:rounded-3xl flex items-center justify-center gap-3 text-lg font-black transition-all hover:scale-[1.02] border-none"
+              >
+                <CreditCard className="w-6 h-6" />
+                COMPRAR AGORA (LOTE 01)
+              </Button>
+            </div>
+
+            {/* Choice Status Bar */}
+            <div className="pt-6 border-t border-white/5">
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-[10px] text-white/40 uppercase font-black tracking-widest">Status do Lote 01</span>
+                <span className="text-primary font-bold text-xs italic">87% Completo</span>
+              </div>
+              <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: "87%" }}
+                  className="h-full bg-primary"
+                />
+              </div>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section >
   );
 };
 
 export default PreRegistrationForm;
-
