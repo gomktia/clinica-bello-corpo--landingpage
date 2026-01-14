@@ -39,7 +39,7 @@ VITE_WHATSAPP_GROUP_URL=https://chat.whatsapp.com/SEU_LINK_AQUI
 Se você estiver usando o Supabase, crie uma tabela chamada `leads` com as colunas:
 - `id` (int8, primary key)
 - `created_at` (timestamptz)
-- `name` (text)
+- `full_name` (text)
 - `email` (text)
 - `phone` (text)
 - `specialty` (text)
