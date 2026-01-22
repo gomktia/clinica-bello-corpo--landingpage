@@ -30,7 +30,7 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
     companyName: "Clínica Bello Corpo", // Identifica o cliente do sistema (Dono da LP)
     email: "",
     whatsapp: "",
-    specialty: "Curso de Estética Avançada" // Identifica o produto/curso
+    specialty: "Destrave sua Carreira na Estética" // Identifica o produto/curso
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
