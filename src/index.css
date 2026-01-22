@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Bello Corpo x Stürmer Style - Standardized Light Theme */
+
+@layer base {
+  :root {
+    /* Backgrounds: Pure White / Light Cream */
+    --background: 30 20% 98%;
+    /* #fdfcfb */
+    --foreground: 345 56% 25%;
+    /* #641c2c - Burgundy Text */
+
+    /* Cards: White or very light */
+    --card: 0 0% 100%;
+    --card-foreground: 345 56% 25%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 345 56% 25%;
+
+    /* Primary: PREMIUM GOLD */
+    --primary: 45 70% 60%;
+    /* #EBCB80 */
+    --primary-foreground: 345 60% 15%;
+    /* Dark burgundy for gold contrast */
+
+    /* Secondary: Deep Burgundy Brand Color */
+    --secondary: 345 56% 25%;
+    /* #641c2c */
+    --secondary-foreground: 0 0% 100%;
+    /* White text on burgundy */
+
+    /* Muted */
+    --muted: 345 20% 94%;
+    --muted-foreground: 345 30% 45%;
+
+    /* Accent */
+    --accent: 45 80% 95%;
+    /* Creamy gold */
+    --accent-foreground: 345 56% 25%;
+
+    /* Destructive */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Borders */
+    --border: 345 20% 90%;
+    --input: 345 20% 90%;
+    --ring: 345 56% 25%;
+
+    --radius: 1.25rem;
+
+    /* Specific Multi-Brand Colors */
+    --burgundy: 345 56% 25%;
+    --burgundy-light: 345 45% 35%;
+    --burgundy-dark: 345 60% 15%;
+
+    --gold: 45 70% 60%;
+    --gold-light: 45 80% 70%;
+    --gold-dark: 45 60% 45%;
+
+    /* Shadows */
+    --shadow-soft: 0 10px 30px -10px rgba(100, 28, 44, 0.1);
+    --shadow-elegant: 0 20px 50px -15px rgba(100, 28, 44, 0.15);
+    --shadow-glow: 0 0 25px -5px rgba(235, 203, 128, 0.4);
+    --shadow-glow-strong: 0 0 35px -2px rgba(235, 203, 128, 0.6);
+  }
+
+  .dark {
+    --background: 345 60% 4%;
+    --foreground: 30 50% 92%;
+    --card: 345 50% 7%;
+    --card-foreground: 30 50% 92%;
+    --popover: 345 50% 7%;
+    --popover-foreground: 30 50% 92%;
+    --primary: 45 70% 60%;
+    --primary-foreground: 345 60% 10%;
+    --secondary: 345 56% 25%;
+    --secondary-foreground: 30 50% 92%;
+    --muted: 345 30% 12%;
+    --muted-foreground: 345 20% 65%;
+    --accent: 45 70% 60%;
+    --accent-foreground: 345 60% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 345 40% 12%;
+    --input: 345 40% 12%;
+    --ring: 45 70% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground tracking-tight;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Poppins', sans-serif;
+    @apply tracking-tight font-medium;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Glassmorphism Refined */
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-elegant;
+  }
+
+  .glass-light {
+    @apply bg-white/40 backdrop-blur-xl border border-white/40 shadow-soft;
+  }
+
+  /* Typography Glow */
+  .text-glow-gold {
+    text-shadow: 0 0 30px rgba(235, 203, 128, 0.4);
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(to right, #EBCB80, #C6A052, #EBCB80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: shine 3s linear infinite;
+  }
+
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  .text-gradient-burgundy {
+    background: linear-gradient(135deg, #641c2c, #4a1520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* High Conversion Backgrounds */
+  .bg-dark-premium {
+    background: radial-gradient(circle at top left, #4a1520, #2a0a12);
+  }
+
+  /* Specific Button Style */
+  .btn-gold-glow {
+    @apply bg-gradient-gold text-secondary shadow-gold-glow hover:shadow-gold-glow-lg hover:scale-[1.03] active:scale-[0.98] transition-all duration-500 rounded-full font-black uppercase tracking-widest text-center;
+    background-size: 200% auto;
+  }
+
+  .bg-gradient-burgundy {
+    background: linear-gradient(135deg, #641c2c, #4a1520);
+  }
+
+  .bg-gradient-gold {
+    background: linear-gradient(135deg, #F5D695 0%, #D4AF37 100%);
+  }
+
+  /* Specific Button Style */
+  .btn-gold-glow {
+    @apply bg-gradient-gold text-secondary shadow-gold-glow hover:shadow-gold-glow-lg hover:scale-[1.03] active:scale-[0.98] transition-all duration-500 rounded-full font-black uppercase tracking-widest;
+    background-size: 200% auto;
+  }
+
+  .btn-gold-glow:hover {
+    background-position: right center;
+  }
+
+  .shadow-gold-glow {
+    box-shadow: 0 10px 40px -10px rgba(212, 175, 55, 0.5);
+  }
+
+  .shadow-gold-glow-lg {
+    box-shadow: 0 15px 50px -5px rgba(212, 175, 55, 0.7);
+  }
+
+  .shadow-soft {
+    box-shadow: 0 10px 40px -15px rgba(0, 0, 0, 0.1);
+  }
+
+  .shadow-elegant {
+    box-shadow: 0 20px 60px -15px rgba(100, 28, 44, 0.15);
+  }
+}
+
+/* Animations - Keeping the same */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-gold {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(235, 203, 128, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 30px rgba(235, 203, 128, 0.7);
+  }
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 3s ease-in-out infinite;
+}
