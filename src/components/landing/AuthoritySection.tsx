@@ -50,7 +50,7 @@ const AuthoritySection = () => {
             <h2 className="font-display text-3xl md:text-5xl text-secondary font-black leading-tight">
               A Diferença entre <span className="text-gradient-gold">Técnica</span> e <span className="italic">Maestria.</span>
             </h2>
-            <div className="space-y-4 md:space-y-6 text-secondary/70 text-base md:text-lg leading-relaxed font-medium">
+            <div className="space-y-4 md:space-y-6 text-secondary/70 text-lg md:text-lg leading-relaxed font-medium">
               <p>
                 Não estou aqui para te vender um curso de final de semana. Estou aqui para transferir mais de 15 anos de consultório para as suas mãos.
               </p>

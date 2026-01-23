@@ -101,10 +101,10 @@ const CourseModules = () => {
                                         <span className="text-primary font-black text-[7px] md:text-[9px] uppercase tracking-[0.2em] block mb-1">
                                             Aula 0{index + 1}
                                         </span>
-                                        <h3 className="font-display text-base md:text-xl text-secondary font-black mb-1 md:mb-2 group-hover:text-primary transition-colors">
+                                        <h3 className="font-display text-lg md:text-xl text-secondary font-black mb-1 md:mb-2 group-hover:text-primary transition-colors">
                                             {aula.title}
                                         </h3>
-                                        <p className="text-secondary/60 text-[10px] md:text-sm leading-relaxed group-hover:text-secondary/80 font-medium transition-colors">
+                                        <p className="text-secondary/60 text-sm md:text-sm leading-relaxed group-hover:text-secondary/80 font-medium transition-colors">
                                             {aula.desc}
                                         </p>
                                     </div>

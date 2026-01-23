@@ -22,7 +22,7 @@ const FinalCTA = ({ onCtaClick }: FinalCTAProps) => {
             Sua carreira merece esse <br />
             <span className="text-gradient-gold">próximo passo.</span>
           </h2>
-          <p className="text-secondary/60 text-base md:text-xl mb-10 md:mb-12 max-w-2xl mx-auto leading-relaxed text-left md:text-center">
+          <p className="text-secondary/60 text-lg md:text-xl mb-10 md:mb-12 max-w-2xl mx-auto leading-relaxed text-left md:text-center">
             Nós removemos todo o risco. Se em 7 dias você sentir que o método não é para você, devolvemos 100% do seu investimento.
           </p>
 

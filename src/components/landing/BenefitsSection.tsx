@@ -50,10 +50,10 @@ const BenefitsSection = () => {
               <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-6 md:mb-8 group-hover:bg-primary transition-all duration-500">
                 <benefit.icon className="w-8 h-8 text-primary group-hover:text-dark-premium transition-colors" />
               </div>
-              <h3 className="font-display text-2xl text-white font-bold mb-4 group-hover:text-primary transition-colors">
+              <h3 className="font-display text-xl md:text-2xl text-white font-bold mb-4 group-hover:text-primary transition-colors">
                 {benefit.title}
               </h3>
-              <p className="text-white/50 text-sm leading-relaxed group-hover:text-white/80 transition-colors">
+              <p className="text-white/50 text-base leading-relaxed group-hover:text-white/80 transition-colors">
                 {benefit.desc}
               </p>
             </motion.div>

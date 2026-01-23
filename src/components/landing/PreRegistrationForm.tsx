@@ -100,7 +100,7 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
               <Sparkles className="w-4 h-4 text-primary" />
               <span className="text-primary font-bold text-[10px] uppercase tracking-widest">Condição Especial de Lançamento</span>
             </div>
-            <h2 className="font-display text-2xl sm:text-3xl md:text-6xl text-white font-black leading-[1.2] mb-6 md:mb-8 break-words text-center lg:text-left w-full">
+            <h2 className="font-display text-3xl sm:text-3xl md:text-6xl text-white font-black leading-[1.2] mb-6 md:mb-8 break-words text-center lg:text-left w-full">
               O seu próximo nível <br className="hidden sm:block" />
               está a <span className="text-gradient-gold">um clique de distância.</span>
             </h2>
