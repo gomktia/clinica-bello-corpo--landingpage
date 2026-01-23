@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Shield, X } from "lucide-react";
+import { X } from "lucide-react";
+import logoBc from "@/assets/logo-bc.png";
 
 const CookieConsent = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -39,8 +40,8 @@ const CookieConsent = () => {
 
                         <div className="flex flex-col gap-5 relative z-10">
                             <div className="flex items-center gap-4">
-                                <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                                    <Shield className="w-6 h-6 text-primary" />
+                                <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center flex-shrink-0 shadow-sm overflow-hidden border border-secondary/5">
+                                    <img src={logoBc} alt="Logo" className="w-8 h-8 object-contain" />
                                 </div>
                                 <div>
                                     <h4 className="font-display font-bold text-dark-premium text-lg leading-tight mb-1">Privacidade & Cookies</h4>
