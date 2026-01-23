@@ -144,9 +144,9 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
             className="relative w-full"
           >
             <div
-              className="bg-white rounded-[2.5rem] md:rounded-[3.5rem] p-7 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative overflow-hidden"
+              className="bg-white rounded-[2.5rem] md:rounded-[3.5rem] p-7 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative"
             >
-              <div className="absolute -top-3 -right-2 md:-top-4 md:-right-4 bg-primary text-dark-premium px-4 py-1.5 md:px-6 md:py-2 rounded-xl md:rounded-2xl font-black text-xs md:text-sm shadow-gold-glow rotate-2 md:rotate-6 z-20">
+              <div className="absolute top-6 right-6 bg-primary text-dark-premium px-4 py-1.5 md:px-6 md:py-2 rounded-xl md:rounded-2xl font-black text-xs md:text-sm shadow-gold-glow rotate-2 md:rotate-6 z-20">
                 LISTA VIP
               </div>
 
