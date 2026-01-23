@@ -48,7 +48,7 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
   ];
 
   return (
-    <div className="flex justify-center gap-1.5 md:gap-4">
+    <div className="flex justify-center gap-1.5 sm:gap-2 md:gap-4">
       {timeUnits.map((unit, index) => (
         <motion.div
           key={unit.label}
@@ -58,7 +58,7 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
           transition={{ delay: index * 0.1 }}
           className="flex flex-col items-center"
         >
-          <div className="bg-secondary text-white w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 rounded-xl md:rounded-2xl flex items-center justify-center shadow-elegant border border-white/10 relative group hover:scale-105 transition-transform duration-300">
+          <div className="bg-secondary text-white w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 rounded-xl md:rounded-2xl flex items-center justify-center shadow-elegant border border-white/10 relative group hover:scale-105 transition-transform duration-300">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl md:rounded-2xl" />
             <span className="font-display text-xl sm:text-2xl md:text-4xl font-bold tracking-tighter relative z-10">
               {String(unit.value).padStart(2, "0")}

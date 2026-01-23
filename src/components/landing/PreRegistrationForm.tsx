@@ -86,7 +86,7 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 blur-[100px] rounded-full -mr-32 -mt-32" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-black/40 blur-[100px] rounded-full -ml-24 -mb-24" />
 
-      <div className="container mx-auto px-0 md:px-6 lg:px-12 relative z-10">
+      <div className="container mx-auto px-4 md:px-6 lg:px-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-7xl mx-auto">
 
           {/* Urgency and Text */}
@@ -100,8 +100,8 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
               <Sparkles className="w-4 h-4 text-primary" />
               <span className="text-primary font-bold text-[10px] uppercase tracking-widest">Condição Especial de Lançamento</span>
             </div>
-            <h2 className="font-display text-3xl md:text-6xl text-white font-black leading-[1.1] mb-6 md:mb-8">
-              O seu próximo nível <br />
+            <h2 className="font-display text-2xl sm:text-3xl md:text-6xl text-white font-black leading-[1.2] mb-6 md:mb-8 break-words">
+              O seu próximo nível <br className="hidden sm:block" />
               está a <span className="text-gradient-gold">um clique de distância.</span>
             </h2>
             <p className="text-white/60 text-lg md:text-xl mb-10 md:mb-12 leading-relaxed max-w-lg">
@@ -144,7 +144,7 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
             className="relative w-full"
           >
             <div
-              className="bg-white rounded-[2.5rem] md:rounded-[3.5rem] p-7 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative"
+              className="bg-white rounded-[2rem] md:rounded-[3.5rem] p-6 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative overflow-hidden"
             >
               <div className="absolute -top-3 right-4 md:top-6 md:right-6 bg-primary text-dark-premium px-3 py-1 md:px-6 md:py-2 rounded-lg md:rounded-2xl font-black text-[10px] md:text-sm shadow-gold-glow rotate-2 md:rotate-6 z-20">
                 LISTA VIP
@@ -189,10 +189,10 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full btn-gold-glow h-16 md:h-20 text-lg md:text-xl font-black tracking-widest mt-4 group rounded-2xl md:rounded-3xl"
+                  className="w-full btn-gold-glow h-14 md:h-20 text-[13px] sm:text-lg md:text-xl font-black tracking-normal sm:tracking-widest mt-4 group rounded-2xl md:rounded-3xl px-4"
                 >
                   {isSubmitting ? "PROCESSANDO..." : "GARANTIR MINHA VAGA AGORA"}
-                  {!isSubmitting && <ArrowRight className="ml-2 w-6 h-6 group-hover:translate-x-1 transition-transform" />}
+                  {!isSubmitting && <ArrowRight className="ml-1 sm:ml-2 w-4 h-4 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />}
                 </Button>
 
                 <div className="flex items-center justify-center gap-3 mt-6 md:mt-8 opacity-60">
