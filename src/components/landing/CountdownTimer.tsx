@@ -48,7 +48,7 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
   ];
 
   return (
-    <div className="flex justify-center gap-2 md:gap-4">
+    <div className="flex justify-center gap-1.5 md:gap-4">
       {timeUnits.map((unit, index) => (
         <motion.div
           key={unit.label}

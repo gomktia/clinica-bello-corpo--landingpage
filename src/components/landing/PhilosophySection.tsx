@@ -37,7 +37,7 @@ const PhilosophySection = () => {
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.3, type: "spring" }}
-                        className="text-4xl md:text-6xl font-black text-red-600 mb-12 flex items-center justify-center gap-4"
+                        className="text-3xl md:text-6xl font-black text-red-600 mb-8 md:mb-12 flex items-center justify-center gap-4"
                     >
                         MENTIRA 😡
                     </motion.div>
@@ -70,12 +70,12 @@ const PhilosophySection = () => {
                         </div>
 
                         {/* Video Footer Label */}
-                        <div className="px-4 md:px-8 py-4 md:py-6 flex items-center justify-between border-t border-secondary/5 mt-2 bg-muted/30 rounded-b-[1.8rem]">
+                        <div className="px-4 md:px-8 py-4 md:py-6 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-secondary/5 mt-2 bg-muted/30 rounded-b-[1.8rem]">
                             <div className="flex items-center gap-3">
-                                <span className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse" />
-                                <p className="text-secondary/60 text-[10px] md:text-xs uppercase font-bold tracking-widest leading-none">A Realidade da Clínica Bello Corpo</p>
+                                <span className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-primary animate-pulse" />
+                                <p className="text-secondary/60 text-[8px] md:text-xs uppercase font-bold tracking-widest leading-none">A Realidade da Clínica Bello Corpo</p>
                             </div>
-                            <p className="text-primary font-bold text-[10px] md:text-xs uppercase tracking-widest italic leading-none">Ciência & Técnica</p>
+                            <p className="text-primary font-bold text-[8px] md:text-xs uppercase tracking-widest italic leading-none">Ciência & Técnica</p>
                         </div>
                     </div>
                 </motion.div>

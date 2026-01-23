@@ -41,7 +41,7 @@ const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-6 text-center lg:text-left"
+            className="font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-4 md:mb-6 text-center lg:text-left"
           >
             Faturamento de Luxo <br className="hidden sm:block" />
             na <span className="text-gradient-gold text-glow-gold">Estética Avançada</span>
@@ -82,12 +82,12 @@ const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
-            className="flex flex-wrap justify-center lg:justify-start gap-4 md:gap-8 opacity-50"
+            className="flex flex-wrap justify-center lg:justify-start gap-x-4 gap-y-3 md:gap-8 opacity-50"
           >
             {["Certificado Master", "Mentoria Direta", "Protocolos Exclusivos"].map((badge, i) => (
               <div key={i} className="flex items-center gap-2">
                 <div className="w-1 h-1 rounded-full bg-primary" />
-                <span className="text-white text-[9px] md:text-[10px] uppercase font-bold tracking-widest">{badge}</span>
+                <span className="text-white text-[8px] md:text-[10px] uppercase font-bold tracking-[0.15em]">{badge}</span>
               </div>
             ))}
           </motion.div>

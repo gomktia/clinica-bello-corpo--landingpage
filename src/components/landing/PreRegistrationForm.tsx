@@ -100,7 +100,7 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
               <Sparkles className="w-4 h-4 text-primary" />
               <span className="text-primary font-bold text-[10px] uppercase tracking-widest">Condição Especial de Lançamento</span>
             </div>
-            <h2 className="font-display text-4xl md:text-6xl text-white font-black leading-[1.1] mb-8">
+            <h2 className="font-display text-3xl md:text-6xl text-white font-black leading-[1.1] mb-6 md:mb-8">
               O seu próximo nível <br />
               está a <span className="text-gradient-gold">um clique de distância.</span>
             </h2>
@@ -115,12 +115,12 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
                   <span className="text-white/80 font-bold text-xs md:text-sm uppercase tracking-wider">Vagas Preenchidas</span>
                   <span className="text-primary font-black text-xl md:text-2xl animate-pulse">87%</span>
                 </div>
-                <div className="h-4 md:h-5 w-full bg-white/5 rounded-full overflow-hidden border border-white/10 p-1">
+                <div className="h-5 md:h-6 w-full bg-white/5 rounded-full overflow-hidden border border-white/10 p-1">
                   <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: "87%" }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
-                    className="h-full bg-gradient-to-r from-primary/60 via-primary to-primary-foreground rounded-full shadow-[0_0_15px_rgba(212,175,55,0.5)]"
+                    className="h-full bg-gradient-to-r from-primary/60 via-primary to-primary-foreground rounded-full shadow-[0_0_15px_rgba(212,175,55,0.6)]"
                   />
                 </div>
                 <p className="text-white/40 text-[10px] md:text-xs">Aproximadamente 13 vagas restantes no Lote 01</p>
@@ -146,13 +146,13 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
             <div
               className="bg-white rounded-[2.5rem] md:rounded-[3.5rem] p-7 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative"
             >
-              <div className="absolute top-6 right-6 bg-primary text-dark-premium px-4 py-1.5 md:px-6 md:py-2 rounded-xl md:rounded-2xl font-black text-xs md:text-sm shadow-gold-glow rotate-2 md:rotate-6 z-20">
+              <div className="absolute -top-3 right-4 md:top-6 md:right-6 bg-primary text-dark-premium px-3 py-1 md:px-6 md:py-2 rounded-lg md:rounded-2xl font-black text-[10px] md:text-sm shadow-gold-glow rotate-2 md:rotate-6 z-20">
                 LISTA VIP
               </div>
 
               <div className="mb-8 text-center md:text-left">
-                <h3 className="text-2xl md:text-3xl font-black text-dark-premium mb-2">Faça sua Inscrição</h3>
-                <p className="text-secondary/60 font-medium">Preencha os dados para garantir sua vaga.</p>
+                <h3 className="text-xl md:text-3xl font-black text-dark-premium mb-2">Faça sua Inscrição</h3>
+                <p className="text-secondary/60 text-sm md:text-lg font-medium">Preencha os dados para garantir sua vaga.</p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
