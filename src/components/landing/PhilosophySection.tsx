@@ -28,7 +28,7 @@ const PhilosophySection = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="text-secondary/60 text-lg md:text-xl max-w-2xl mx-auto mb-6 text-left md:text-center"
+                        className="text-secondary/80 text-lg md:text-xl max-w-2xl mx-auto mb-6 text-left md:text-center"
                     >
                         Dizem que você precisa de mil cursos, de aparelhos de 300k, de mais seguidores...
                     </motion.p>
@@ -108,7 +108,7 @@ const PhilosophySection = () => {
                                     <div className="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                                         <div className="w-1.5 h-1.5 rounded-full bg-red-500" />
                                     </div>
-                                    <span className="text-base font-medium">{text}</span>
+                                    <span className="text-base font-medium text-secondary/80">{text}</span>
                                 </li>
                             ))}
                         </ul>

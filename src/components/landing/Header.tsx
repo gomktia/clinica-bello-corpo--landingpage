@@ -75,6 +75,7 @@ const Header = ({ onCtaClick }: HeaderProps) => {
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
               className={`md:hidden p-2 rounded-xl transition-colors z-50 ${isScrolled || isMobileMenuOpen ? "text-secondary bg-secondary/5" : "text-white bg-white/10"}`}
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

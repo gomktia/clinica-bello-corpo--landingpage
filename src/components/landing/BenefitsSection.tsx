@@ -33,7 +33,7 @@ const BenefitsSection = () => {
           >
             A Excelência em <span className="text-gradient-gold text-glow-gold">Cada Detalhe</span>
           </motion.h2>
-          <p className="text-white/50 text-lg">
+          <p className="text-white/70 text-lg">
             Muito mais do que teoria. Entregamos as ferramentas para você construir um negócio sólido e lucrativo.
           </p>
         </div>
@@ -53,7 +53,7 @@ const BenefitsSection = () => {
               <h3 className="font-display text-xl md:text-2xl text-white font-bold mb-4 group-hover:text-primary transition-colors">
                 {benefit.title}
               </h3>
-              <p className="text-white/50 text-base leading-relaxed group-hover:text-white/80 transition-colors">
+              <p className="text-white/70 text-base leading-relaxed group-hover:text-white transition-colors">
                 {benefit.desc}
               </p>
             </motion.div>

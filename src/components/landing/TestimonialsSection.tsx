@@ -27,7 +27,7 @@ const TestimonialsSection = () => {
           <h2 className="font-display text-3xl md:text-5xl text-secondary font-black mb-6 text-center">
             Resultados que <span className="text-primary italic">Inspiram</span>
           </h2>
-          <p className="text-secondary/60 text-lg text-left md:text-center">
+          <p className="text-secondary/80 text-lg text-left md:text-center">
             Ouça de quem já percorreu o caminho e transformou sua realidade profissional.
           </p>
         </div>

@@ -15,6 +15,7 @@ const CourseCover = () => {
                         <img
                             src="/WhatsApp Image 2026-01-13 at 15.28.50.jpeg"
                             alt="Destrave sua Carreira na Estética"
+                            loading="lazy"
                             className="w-full h-full object-cover object-top"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />

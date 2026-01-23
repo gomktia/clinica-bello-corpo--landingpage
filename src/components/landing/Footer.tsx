@@ -26,7 +26,7 @@ const Footer = ({ onPrivacyClick, onTermsClick }: FooterProps) => {
                 className="w-full h-full object-contain rounded-full"
               />
             </div>
-            <p className="text-white/40 text-[9px] md:text-[10px] max-w-[180px] md:max-w-[200px] text-center md:text-left font-bold uppercase tracking-widest leading-relaxed">
+            <p className="text-white/60 text-[9px] md:text-[10px] max-w-[180px] md:max-w-[200px] text-center md:text-left font-bold uppercase tracking-widest leading-relaxed">
               Elevando o padrão da estética brasileira.
             </p>
           </div>
@@ -37,6 +37,7 @@ const Footer = ({ onPrivacyClick, onTermsClick }: FooterProps) => {
                 href="https://instagram.com/bellocorpo"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Siga a Clínica Bello Corpo no Instagram"
                 className="flex items-center gap-2 hover:text-primary transition-all duration-300 group px-4 py-2 bg-white/5 rounded-full md:bg-transparent md:p-0"
               >
                 <Instagram className="w-4 h-4 group-hover:scale-110 transition-transform group-hover:text-primary" />
@@ -58,7 +59,7 @@ const Footer = ({ onPrivacyClick, onTermsClick }: FooterProps) => {
               </div>
             </div>
 
-            <p className="text-[8px] md:text-[9px] text-white/20 uppercase tracking-[0.3em] font-bold text-center md:text-right">
+            <p className="text-[8px] md:text-[9px] text-white/40 uppercase tracking-[0.3em] font-bold text-center md:text-right">
               © {new Date().getFullYear()} Clínica Bello Corpo Cursos. <br className="sm:hidden" /> Todos os direitos reservados.
             </p>
           </div>

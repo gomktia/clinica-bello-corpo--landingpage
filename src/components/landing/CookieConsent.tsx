@@ -44,7 +44,7 @@ const CookieConsent = () => {
                                     <img src={logoBc} alt="Logo" className="w-full h-full object-contain rounded-full" />
                                 </div>
                                 <div>
-                                    <h4 className="font-display font-bold text-dark-premium text-lg leading-tight mb-1">Privacidade & Cookies</h4>
+                                    <h3 className="font-display font-bold text-dark-premium text-lg leading-tight mb-1">Privacidade & Cookies</h3>
                                     <p className="text-secondary/60 text-xs md:text-sm leading-relaxed">
                                         Usamos cookies para melhorar sua experiência e analisar nosso tráfego conforme a LGPD.
                                     </p>
@@ -70,6 +70,7 @@ const CookieConsent = () => {
 
                         <button
                             onClick={() => setIsVisible(false)}
+                            aria-label="Concordar e fechar"
                             className="absolute top-4 right-4 p-2 text-secondary/40 hover:text-secondary/80 transition-colors"
                         >
                             <X className="w-4 h-4" />

@@ -152,7 +152,7 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
 
               <div className="mb-8 text-center md:text-left">
                 <h3 className="text-xl md:text-3xl font-black text-dark-premium mb-2">Faça sua Inscrição</h3>
-                <p className="text-secondary/60 text-sm md:text-lg font-medium">Preencha os dados para garantir sua vaga.</p>
+                <p className="text-secondary/80 text-sm md:text-lg font-medium">Preencha os dados para garantir sua vaga.</p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
