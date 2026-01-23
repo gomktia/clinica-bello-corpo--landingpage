@@ -41,10 +41,10 @@ const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6 text-center lg:text-left balance"
+            className="font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-6 text-center lg:text-left"
           >
-            Faturamento de Luxo na <br className="hidden sm:block" />
-            <span className="text-gradient-gold text-glow-gold">Estética Avançada</span>
+            Faturamento de Luxo <br className="hidden sm:block" />
+            na <span className="text-gradient-gold text-glow-gold">Estética Avançada</span>
           </motion.h1>
 
           <motion.p
