@@ -207,8 +207,8 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
 
       {/* Success Modal (Dialog) */}
       <Dialog open={isSuccess} onOpenChange={setIsSuccess}>
-        <DialogContent className="max-w-[400px] md:max-w-[500px] bg-dark-premium border-primary/30 p-0 overflow-hidden rounded-[2.5rem] md:rounded-[3rem]">
-          <div className="p-8 md:p-12 text-center relative">
+        <DialogContent className="w-[95%] max-w-[400px] md:max-w-[500px] bg-dark-premium border-primary/30 p-0 overflow-hidden rounded-[2rem] md:rounded-[3rem] mx-auto">
+          <div className="p-6 md:p-12 text-center relative">
             {/* Subtle Glow Background */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
 

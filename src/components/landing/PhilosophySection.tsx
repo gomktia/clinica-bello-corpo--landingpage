@@ -85,7 +85,7 @@ const PhilosophySection = () => {
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        className="bg-muted/30 p-6 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border border-secondary/5 relative overflow-hidden"
+                        className="bg-muted/30 p-5 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border border-secondary/5 relative overflow-hidden"
                     >
                         <div className="absolute -top-4 -left-4 w-24 h-24 bg-red-500/5 blur-2xl rounded-full" />
                         <div className="flex items-center gap-4 mb-10">

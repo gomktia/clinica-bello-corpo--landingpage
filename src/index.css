@@ -184,12 +184,13 @@
 
   /* Specific Button Style */
   .btn-gold-glow {
-    @apply bg-gradient-gold text-secondary shadow-gold-glow hover:shadow-gold-glow-lg hover:scale-[1.03] active:scale-[0.98] transition-all duration-500 rounded-full font-black uppercase tracking-widest;
+    @apply bg-gradient-gold text-secondary shadow-gold-glow hover:shadow-gold-glow-lg hover:scale-[1.05] active:scale-[0.98] transition-all duration-300 rounded-full font-black uppercase tracking-widest relative overflow-hidden;
     background-size: 200% auto;
   }
 
   .btn-gold-glow:hover {
     background-position: right center;
+    @apply ring-2 ring-white/20;
   }
 
   .shadow-gold-glow {
