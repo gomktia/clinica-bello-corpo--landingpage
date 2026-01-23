@@ -40,8 +40,8 @@ const CookieConsent = () => {
 
                         <div className="flex flex-col gap-5 relative z-10">
                             <div className="flex items-center gap-4">
-                                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-sm overflow-hidden border border-secondary/5">
-                                    <img src={logoBc} alt="Logo" className="w-9 h-9 object-contain" />
+                                <div className="w-10 h-10 rounded-full bg-white p-1 border border-primary/20 shadow-sm flex items-center justify-center overflow-hidden flex-shrink-0">
+                                    <img src={logoBc} alt="Logo" className="w-full h-full object-contain rounded-full" />
                                 </div>
                                 <div>
                                     <h4 className="font-display font-bold text-dark-premium text-lg leading-tight mb-1">Privacidade & Cookies</h4>
