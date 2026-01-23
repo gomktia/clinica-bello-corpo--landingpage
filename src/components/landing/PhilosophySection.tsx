@@ -52,7 +52,7 @@ const PhilosophySection = () => {
                 >
                     <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20 rounded-[2.5rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                     <div className="relative bg-white p-2 rounded-[2.5rem] border border-primary/20 shadow-extra-elegant overflow-hidden">
-                        <div className="aspect-video w-full rounded-[2rem] overflow-hidden bg-secondary relative">
+                        <div className="aspect-[16/10] w-full rounded-[2rem] overflow-hidden bg-secondary relative">
                             <video
                                 className="w-full h-full object-cover object-top"
                                 autoPlay
