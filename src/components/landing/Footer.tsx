@@ -2,7 +2,12 @@ import { motion } from "framer-motion";
 import logoBc from "@/assets/logo-bc.png";
 import { Instagram } from "lucide-react";
 
-const Footer = () => {
+interface FooterProps {
+  onPrivacyClick?: () => void;
+  onTermsClick?: () => void;
+}
+
+const Footer = ({ onPrivacyClick, onTermsClick }: FooterProps) => {
   return (
     <footer className="py-12 md:py-16 bg-dark-premium text-white border-t border-white/5">
       <div className="container mx-auto px-6 lg:px-12">
@@ -38,8 +43,18 @@ const Footer = () => {
                 <span className="group-hover:text-glow-gold">@clinicabellocorpo</span>
               </a>
               <div className="flex items-center gap-6">
-                <a href="#" className="hover:text-primary transition-all duration-300 hover:text-glow-gold">Termos</a>
-                <a href="#" className="hover:text-primary transition-all duration-300 hover:text-glow-gold">Privacidade</a>
+                <button
+                  onClick={onTermsClick}
+                  className="hover:text-primary transition-all duration-300 hover:text-glow-gold uppercase"
+                >
+                  Termos
+                </button>
+                <button
+                  onClick={onPrivacyClick}
+                  className="hover:text-primary transition-all duration-300 hover:text-glow-gold uppercase"
+                >
+                  Privacidade
+                </button>
               </div>
             </div>
 

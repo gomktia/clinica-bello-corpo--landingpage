@@ -94,17 +94,17 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="flex flex-col text-center lg:text-left items-center lg:items-start"
+            className="flex flex-col text-left lg:text-left items-start lg:items-start"
           >
             <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-1.5 mb-6 w-fit">
               <Sparkles className="w-4 h-4 text-primary" />
               <span className="text-primary font-bold text-[10px] uppercase tracking-widest">Condição Especial de Lançamento</span>
             </div>
-            <h2 className="font-display text-2xl sm:text-3xl md:text-6xl text-white font-black leading-[1.2] mb-6 md:mb-8 break-words">
+            <h2 className="font-display text-2xl sm:text-3xl md:text-6xl text-white font-black leading-[1.2] mb-6 md:mb-8 break-words text-center lg:text-left w-full">
               O seu próximo nível <br className="hidden sm:block" />
               está a <span className="text-gradient-gold">um clique de distância.</span>
             </h2>
-            <p className="text-white/60 text-lg md:text-xl mb-10 md:mb-12 leading-relaxed max-w-lg">
+            <p className="text-white/60 text-lg md:text-xl mb-10 md:mb-12 leading-relaxed max-w-lg text-left lg:text-left">
               As inscrições estão prestes a abrir. Garanta seu lugar na lista prioritária e receba o link com bônus exclusivos.
             </p>
 
@@ -144,9 +144,9 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
             className="relative w-full"
           >
             <div
-              className="bg-white rounded-[2rem] md:rounded-[3.5rem] p-6 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative overflow-hidden"
+              className="bg-white rounded-[2rem] md:rounded-[3.5rem] p-6 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative"
             >
-              <div className="absolute -top-3 right-4 md:top-6 md:right-6 bg-primary text-dark-premium px-3 py-1 md:px-6 md:py-2 rounded-lg md:rounded-2xl font-black text-[10px] md:text-sm shadow-gold-glow rotate-2 md:rotate-6 z-20">
+              <div className="absolute top-0 right-4 md:top-6 md:right-6 bg-primary text-dark-premium px-3 py-1 md:px-6 md:py-2 rounded-lg md:rounded-2xl font-black text-[10px] md:text-sm shadow-gold-glow rotate-2 md:rotate-6 z-20">
                 LISTA VIP
               </div>
 

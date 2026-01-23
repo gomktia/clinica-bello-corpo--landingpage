@@ -51,23 +51,23 @@ const CourseModules = () => {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-full bg-gradient-to-b from-transparent via-secondary/20 to-transparent hidden lg:block" />
 
             <div className="container mx-auto px-6 lg:px-12 relative z-10">
-                <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+                <div className="max-w-3xl mx-auto mb-12 md:mb-16">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        className="inline-block px-4 py-1.5 rounded-full bg-secondary/5 border border-secondary/10 text-secondary/60 text-[10px] font-black uppercase tracking-[0.3em] mb-4"
+                        className="flex items-center justify-center lg:justify-center px-4 py-1.5 rounded-full bg-secondary/5 border border-secondary/10 text-secondary/60 text-[10px] font-black uppercase tracking-[0.3em] mb-4 w-fit mx-auto"
                     >
                         Cronograma Detalhado
                     </motion.div>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        className="font-display text-3xl md:text-5xl text-secondary font-black mb-6 leading-tight"
+                        className="font-display text-3xl md:text-5xl text-secondary font-black mb-6 leading-tight text-center"
                     >
                         Sua Jornada para a <br />
                         <span className="text-gradient-gold">Maestria Clínica</span>
                     </motion.h2>
-                    <p className="text-secondary/60 text-base md:text-lg max-w-2xl mx-auto font-medium">
+                    <p className="text-secondary/60 text-base md:text-lg max-w-2xl mx-auto font-medium text-left md:text-center">
                         Um passo a passo progressivo desenhado para o seu domínio total.
                     </p>
                 </div>

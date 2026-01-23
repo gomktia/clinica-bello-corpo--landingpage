@@ -13,16 +13,16 @@ const FinalCTA = ({ onCtaClick }: FinalCTAProps) => {
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          className="max-w-4xl mx-auto text-center"
+          className="max-w-4xl mx-auto"
         >
           <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 md:mb-8">
             <HeartPulse className="w-6 h-6 md:w-8 md:h-8 text-primary" />
           </div>
-          <h2 className="font-display text-3xl md:text-5xl lg:text-6xl text-secondary font-black leading-tight mb-6 md:mb-8">
+          <h2 className="font-display text-3xl md:text-5xl lg:text-6xl text-secondary font-black leading-tight mb-6 md:mb-8 text-center">
             Sua carreira merece esse <br />
             <span className="text-gradient-gold">próximo passo.</span>
           </h2>
-          <p className="text-secondary/60 text-base md:text-xl mb-10 md:mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-secondary/60 text-base md:text-xl mb-10 md:mb-12 max-w-2xl mx-auto leading-relaxed text-left md:text-center">
             Nós removemos todo o risco. Se em 7 dias você sentir que o método não é para você, devolvemos 100% do seu investimento.
           </p>
 

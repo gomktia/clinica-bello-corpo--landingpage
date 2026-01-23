@@ -16,6 +16,7 @@ const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
         <img
           src={heroImage}
           alt="Luxury Esthetics"
+          fetchPriority="high"
           className="w-full h-full object-cover grayscale-[20%] brightness-75 md:brightness-100 object-[75%_top] lg:object-center"
         />
       </div>
@@ -51,7 +52,7 @@ const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-white/70 text-base md:text-xl font-body mb-10 max-w-xl leading-relaxed text-center lg:text-left mx-auto lg:mx-0"
+            className="text-white/70 text-base md:text-xl font-body mb-10 max-w-xl leading-relaxed text-left lg:text-left mx-auto lg:mx-0"
           >
             Domine do Ultraformer à Criolipólise. Aprenda o raciocínio clínico por trás das tecnologias mais lucrativas do mercado e fature alto com protocolos que entregam resultados de elite.
           </motion.p>

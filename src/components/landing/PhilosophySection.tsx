@@ -5,11 +5,11 @@ const PhilosophySection = () => {
     return (
         <section id="metodo" className="py-16 md:py-24 bg-white relative overflow-hidden">
             <div className="container mx-auto px-6 lg:px-12">
-                <div className="text-center max-w-4xl mx-auto mb-20">
+                <div className="max-w-4xl mx-auto mb-20">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        className="inline-flex items-center gap-2 bg-red-100 text-red-600 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-8"
+                        className="flex items-center gap-2 bg-red-100 text-red-600 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-8 w-fit mx-auto lg:mx-0"
                     >
                         <AlertCircle className="w-3.5 h-3.5" />
                         Alerta de Realidade
@@ -19,7 +19,7 @@ const PhilosophySection = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="font-display text-3xl md:text-5xl lg:text-6xl text-secondary font-black leading-tight mb-8"
+                        className="font-display text-3xl md:text-5xl lg:text-6xl text-secondary font-black leading-tight mb-8 text-center md:text-center"
                     >
                         O MERCADO <span className="text-red-600">MENTE</span> PRA VOCÊ <br className="hidden md:block" /> TODOS OS DIAS.
                     </motion.h2>
@@ -28,7 +28,7 @@ const PhilosophySection = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="text-secondary/60 text-lg md:text-xl max-w-2xl mx-auto mb-6"
+                        className="text-secondary/60 text-lg md:text-xl max-w-2xl mx-auto mb-6 text-left md:text-center"
                     >
                         Dizem que você precisa de mil cursos, de aparelhos de 300k, de mais seguidores...
                     </motion.p>

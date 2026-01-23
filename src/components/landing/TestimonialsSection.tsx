@@ -23,11 +23,11 @@ const TestimonialsSection = () => {
   return (
     <section id="depoimentos" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
-          <h2 className="font-display text-3xl md:text-5xl text-secondary font-black mb-6">
+        <div className="max-w-3xl mx-auto mb-12 md:mb-16">
+          <h2 className="font-display text-3xl md:text-5xl text-secondary font-black mb-6 text-center">
             Resultados que <span className="text-primary italic">Inspiram</span>
           </h2>
-          <p className="text-secondary/60 text-lg">
+          <p className="text-secondary/60 text-lg text-left md:text-center">
             Ouça de quem já percorreu o caminho e transformou sua realidade profissional.
           </p>
         </div>

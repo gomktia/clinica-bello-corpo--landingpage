@@ -9,8 +9,14 @@ import TestimonialsSection from "@/components/landing/TestimonialsSection";
 import PreRegistrationForm from "@/components/landing/PreRegistrationForm";
 import FinalCTA from "@/components/landing/FinalCTA";
 import Footer from "@/components/landing/Footer";
+import CookieConsent from "@/components/landing/CookieConsent";
+import { PrivacyPolicy, TermsOfUse } from "@/components/landing/LegalPages";
+import { useState } from "react";
 
 const Index = () => {
+  const [showPrivacy, setShowPrivacy] = useState(false);
+  const [showTerms, setShowTerms] = useState(false);
+
   const scrollToForm = () => {
     document.getElementById("pre-registration")?.scrollIntoView({
       behavior: "smooth",
@@ -29,7 +35,11 @@ const Index = () => {
       <TestimonialsSection />
       <PreRegistrationForm id="pre-registration" />
       <FinalCTA onCtaClick={scrollToForm} />
-      <Footer />
+      <Footer onPrivacyClick={() => setShowPrivacy(true)} onTermsClick={() => setShowTerms(true)} />
+
+      <CookieConsent />
+      <PrivacyPolicy isOpen={showPrivacy} onOpenChange={setShowPrivacy} />
+      <TermsOfUse isOpen={showTerms} onOpenChange={setShowTerms} />
     </main>
   );
 };

@@ -18,6 +18,7 @@ const AuthoritySection = () => {
                 <div className="absolute inset-0 border-[2px] border-primary/20 rounded-full z-20" />
                 <img
                   src={mentoraImage}
+                  loading="lazy"
                   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
                   alt="Mentora Bello Corpo"
                 />
@@ -35,7 +36,7 @@ const AuthoritySection = () => {
 
             {/* Context Image Overlay (Smaller and shifted) */}
             <div className="absolute -bottom-8 right-0 md:right-10 w-40 h-40 md:w-56 md:h-56 rounded-[2.5rem] overflow-hidden shadow-extra-elegant z-20 border-[6px] border-white hidden lg:block">
-              <img src={clinicImage} className="w-full h-full object-cover brightness-90" alt="Clínica Interior" />
+              <img src={clinicImage} loading="lazy" className="w-full h-full object-cover brightness-90" alt="Clínica Interior" />
             </div>
           </motion.div>
 
