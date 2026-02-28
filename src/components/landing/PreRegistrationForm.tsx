@@ -8,7 +8,7 @@ interface PreRegistrationFormProps {
 }
 
 const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
-  const checkoutUrl = "https://checkout.korvex.com.br/checkout/cmm2qpbxi03911rmxjbvnfzxt?offer=6OJ7XBF";
+  const checkoutUrl = "https://cursos.esteticabellocorpo.com.br/checkout/GaMqdG";
 
   return (
     <section id={id} className="py-20 md:py-32 bg-dark-premium relative overflow-hidden px-4">
