@@ -8,7 +8,7 @@ interface PreRegistrationFormProps {
 }
 
 const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
-  const checkoutUrl = "https://cursos.esteticabellocorpo.com.br/checkout/GaMqdG";
+  const checkoutUrl = "https://pay.kiwify.com.br/2UKl5J0";
 
   return (
     <section id={id} className="py-20 md:py-32 bg-dark-premium relative overflow-hidden px-4">
@@ -41,7 +41,7 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
 
             <h2 className="font-display text-4xl sm:text-5xl md:text-7xl text-white font-black leading-[1.1] mb-6 md:mb-10 text-center lg:text-left w-full">
               ACESSO TOTAL <br />
-              <span className="text-gradient-gold drop-shadow-2xl">12x R$ 10,04</span>
+              <span className="text-gradient-gold drop-shadow-2xl">12x R$ 10,03</span>
             </h2>
 
             <div className="bg-white/5 border border-primary/20 rounded-[2.5rem] p-6 md:p-8 mb-10 md:mb-12 relative overflow-hidden group w-full">
@@ -97,7 +97,7 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
                 <h3 className="text-xl md:text-3xl font-black text-dark-premium mb-4">Garanta seu Acesso Total</h3>
                 <div className="flex flex-col items-center gap-2 mb-6">
                   <span className="text-secondary/50 text-sm font-bold uppercase tracking-widest">Pré-venda por apenas</span>
-                  <span className="text-4xl md:text-6xl font-black text-secondary animate-pulse">12x R$ 10<span className="text-2xl md:text-3xl">,04</span></span>
+                  <span className="text-4xl md:text-6xl font-black text-secondary animate-pulse">12x R$ 10<span className="text-2xl md:text-3xl">,03</span></span>
                   <span className="text-secondary/60 text-sm md:text-base font-medium">ou <span className="font-black text-dark-premium">R$ 97,00 à vista</span></span>
                 </div>
               </div>
