@@ -22,7 +22,7 @@ const Footer = ({ onPrivacyClick, onTermsClick }: FooterProps) => {
             <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white p-1.5 md:p-2 border-2 border-primary/30 shadow-gold-glow flex items-center justify-center overflow-hidden mb-1 md:mb-2">
               <img
                 src={logoBc}
-                alt="Bello Corpo - Cursos"
+                alt="Nicole Zorn - Cursos"
                 className="w-full h-full object-contain rounded-full"
               />
             </div>
@@ -34,14 +34,14 @@ const Footer = ({ onPrivacyClick, onTermsClick }: FooterProps) => {
           <div className="flex flex-col items-center md:items-end gap-6 md:gap-4">
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-end gap-6 md:gap-8 text-sm font-bold tracking-wide uppercase text-[9px] md:text-[10px]">
               <a
-                href="https://instagram.com/bellocorpo"
+                href="https://www.instagram.com/esteticabellocorpoo"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Siga a Clínica Bello Corpo no Instagram"
+                aria-label="Siga Nicole Zorn no Instagram"
                 className="flex items-center gap-2 hover:text-primary transition-all duration-300 group px-4 py-2 bg-white/5 rounded-full md:bg-transparent md:p-0"
               >
                 <Instagram className="w-4 h-4 group-hover:scale-110 transition-transform group-hover:text-primary" />
-                <span className="group-hover:text-glow-gold">@clinicabellocorpo</span>
+                <span className="group-hover:text-glow-gold">@esteticabellocorpoo</span>
               </a>
               <div className="flex items-center gap-6">
                 <button
@@ -60,7 +60,7 @@ const Footer = ({ onPrivacyClick, onTermsClick }: FooterProps) => {
             </div>
 
             <p className="text-[8px] md:text-[9px] text-white/40 uppercase tracking-[0.3em] font-bold text-center md:text-right">
-              © {new Date().getFullYear()} Clínica Bello Corpo Cursos. <br className="sm:hidden" /> Todos os direitos reservados.
+              © {new Date().getFullYear()} Nicole Zorn Cursos. <br className="sm:hidden" /> Todos os direitos reservados.
             </p>
           </div>
         </motion.div>

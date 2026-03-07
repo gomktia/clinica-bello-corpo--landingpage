@@ -59,7 +59,7 @@ const ThankYou = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             src={logoFull}
-            alt="Bello Corpo"
+            alt="Nicole Zorn"
             className="h-10 object-contain mx-auto mb-8"
           />
 
@@ -88,7 +88,7 @@ const ThankYou = () => {
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl mb-6">
               Bem-vinda à
-              <span className="text-gradient-burgundy"> Bello Corpo</span>
+              <span className="text-gradient-burgundy"> Nicole Zorn</span>
             </h1>
 
             <p className="text-muted-foreground font-body text-lg mb-10 max-w-xl mx-auto">

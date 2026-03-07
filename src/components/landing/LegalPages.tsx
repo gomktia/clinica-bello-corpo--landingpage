@@ -46,7 +46,7 @@ export const PrivacyPolicy = ({
 }) => (
     <LegalModal isOpen={isOpen} onOpenChange={onOpenChange} title="Política de Privacidade">
         <h3>1. Introdução</h3>
-        <p>A Clínica Bello Corpo valoriza a privacidade dos seus usuários. Esta política descreve como coletamos e usamos seus dados em conformidade com a LGPD.</p>
+        <p>A Nicole Zorn valoriza a privacidade dos seus usuários. Esta política descreve como coletamos e usamos seus dados em conformidade com a LGPD.</p>
 
         <h3>2. Coleta de Dados</h3>
         <p>Coletamos dados fornecidos voluntariamente através de nossos formulários de cadastro, como nome, e-mail e telefone, para envio de informações sobre nossos cursos e promoções.</p>
@@ -74,7 +74,7 @@ export const TermsOfUse = ({
         <p>Ao acessar este site, você concorda em cumprir estes termos de serviço e todas as leis e regulamentos aplicáveis.</p>
 
         <h3>2. Licença de Uso</h3>
-        <p>O conteúdo deste site é de propriedade exclusiva da Clínica Bello Corpo. É proibida a reprodução sem autorização prévia.</p>
+        <p>O conteúdo deste site é de propriedade exclusiva de Nicole Zorn. É proibida a reprodução sem autorização prévia.</p>
 
         <h3>3. Responsabilidade</h3>
         <p>Os resultados apresentados nos depoimentos são individuais e podem variar de pessoa para pessoa. Dedicação e aplicação prática do conteúdo são essenciais.</p>

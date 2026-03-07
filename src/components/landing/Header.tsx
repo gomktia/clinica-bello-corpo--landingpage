@@ -41,12 +41,12 @@ const Header = ({ onCtaClick }: HeaderProps) => {
             <div className="relative w-10 h-10 md:w-14 md:h-14 overflow-hidden rounded-full shadow-extra-elegant bg-white p-1.5 md:p-2 border border-primary/20 group-hover:scale-105 transition-transform duration-500">
               <img
                 src={logoBc}
-                alt="Bello Corpo"
+                alt="Nicole Zorn"
                 className="w-full h-full object-contain rounded-full"
               />
             </div>
             <div className="flex flex-col">
-              <span className={`font-display font-black text-sm md:text-lg tracking-tight leading-none transition-colors duration-300 ${isScrolled || isMobileMenuOpen ? "text-secondary" : "text-white"}`}>BELLO CORPO</span>
+              <span className={`font-display font-black text-sm md:text-lg tracking-tight leading-none transition-colors duration-300 ${isScrolled || isMobileMenuOpen ? "text-secondary" : "text-white"}`}>NICOLE ZORN</span>
               <span className="font-body text-[8px] md:text-[9px] tracking-[0.4em] text-primary font-bold uppercase leading-none mt-1">Cursos</span>
             </div>
           </a>
@@ -123,7 +123,7 @@ const Header = ({ onCtaClick }: HeaderProps) => {
             </div>
 
             <div className="mt-12 opacity-30 text-[10px] uppercase font-bold tracking-[0.3em] text-secondary">
-              Clínica Bello Corpo © 2026
+              Nicole Zorn © 2026
             </div>
           </motion.div>
         )}

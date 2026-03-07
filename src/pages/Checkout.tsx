@@ -44,7 +44,7 @@ const Checkout = () => {
   };
 
   const courseDetails = [
-    "Acesso completo ao curso Bello Corpo™",
+    "Acesso completo ao curso Nicole Zorn™",
     "Módulo bônus: Mentoria de Negócios",
     "Certificado Premium de Conclusão",
     "Acesso vitalício à comunidade exclusiva",
@@ -69,7 +69,7 @@ const Checkout = () => {
           
           <img
             src={logoFull}
-            alt="Bello Corpo"
+            alt="Nicole Zorn"
             className="h-8 object-contain"
           />
         </div>
@@ -87,7 +87,7 @@ const Checkout = () => {
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between items-start pb-4 border-b border-border/50">
                   <div>
-                    <h3 className="font-display text-lg">Formação Bello Corpo™</h3>
+                    <h3 className="font-display text-lg">Formação Nicole Zorn™</h3>
                     <p className="text-sm text-muted-foreground">
                       Estética Avançada Facial e Corporal
                     </p>

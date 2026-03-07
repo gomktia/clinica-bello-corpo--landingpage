@@ -73,7 +73,7 @@ const PhilosophySection = () => {
                         <div className="px-4 md:px-8 py-4 md:py-6 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-secondary/5 mt-2 bg-muted/30 rounded-b-[1.8rem]">
                             <div className="flex items-center gap-3">
                                 <span className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-primary animate-pulse" />
-                                <p className="text-secondary/60 text-[8px] md:text-xs uppercase font-bold tracking-widest leading-none">A Realidade da Clínica Bello Corpo</p>
+                                <p className="text-secondary/60 text-[8px] md:text-xs uppercase font-bold tracking-widest leading-none">A Realidade da Nicole Zorn</p>
                             </div>
                             <p className="text-primary font-bold text-[8px] md:text-xs uppercase tracking-widest italic leading-none">Ciência & Técnica</p>
                         </div>
@@ -127,7 +127,7 @@ const PhilosophySection = () => {
                             </div>
                             <div>
                                 <h3 className="font-display text-2xl text-primary font-bold">O QUE VOCÊ PRECISA É DE:</h3>
-                                <p className="text-primary/60 text-[10px] uppercase font-bold tracking-widest mt-1">O Método Clínica Bello Corpo</p>
+                                <p className="text-primary/60 text-[10px] uppercase font-bold tracking-widest mt-1">O Método Nicole Zorn</p>
                             </div>
                         </div>
                         <ul className="space-y-6 mb-10">

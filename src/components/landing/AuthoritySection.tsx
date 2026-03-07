@@ -20,7 +20,7 @@ const AuthoritySection = () => {
                   src={mentoraImage}
                   loading="lazy"
                   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
-                  alt="Mentora Bello Corpo"
+                  alt="Mentora Nicole Zorn"
                 />
               </div>
 
@@ -46,7 +46,7 @@ const AuthoritySection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             className="flex flex-col gap-5 md:gap-6"
           >
-            <span className="text-primary font-black text-[10px] md:text-xs uppercase tracking-[0.2em] md:tracking-[0.4em]">Propósito Bello Corpo</span>
+            <span className="text-primary font-black text-[10px] md:text-xs uppercase tracking-[0.2em] md:tracking-[0.4em]">Propósito Nicole Zorn</span>
             <h2 className="font-display text-3xl md:text-5xl text-secondary font-black leading-tight">
               A Diferença entre <span className="text-gradient-gold">Técnica</span> e <span className="italic">Maestria.</span>
             </h2>
@@ -55,7 +55,7 @@ const AuthoritySection = () => {
                 Não estou aqui para te vender um curso de final de semana. Estou aqui para transferir mais de 15 anos de consultório para as suas mãos.
               </p>
               <p>
-                A <strong className="text-secondary">Clínica Bello Corpo</strong> foi criada para profissionais que cansaram do básico e buscam o extraordinário. Já capacitamos mais de 2.000 especialistas que hoje dominam o mercado de suas regiões.
+                A <strong className="text-secondary">Nicole Zorn</strong> foi criada para profissionais que cansaram do básico e buscam o extraordinário. Já capacitamos mais de 2.000 especialistas que hoje dominam o mercado de suas regiões.
               </p>
               <p className="border-l-4 border-primary pl-5 md:pl-6 italic">
                 "Meu compromisso é que você nunca mais seja refém de uma máquina, mas sim a autora dos seus próprios resultados."
