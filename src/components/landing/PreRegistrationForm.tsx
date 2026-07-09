@@ -56,7 +56,7 @@ const PreRegistrationForm = ({ id }: PreRegistrationFormProps) => {
                     <Clock className="w-3.5 h-3.5 text-red-500" />
                   </div>
                   <p className="font-black uppercase tracking-widest text-sm md:text-base">
-                    VALOR VÁLIDO ATÉ: <span className="text-red-500 underline underline-offset-4 decoration-2">31/03/2026</span>
+                    VALOR VÁLIDO ATÉ: <span className="text-red-500 underline underline-offset-4 decoration-2">31/07/2026</span>
                   </p>
                 </div>
 
